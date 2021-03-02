@@ -6,7 +6,7 @@ export AVRDUDE=/usr/bin/avrdude
 # set path for avrdude config
 export AVRDUDE_CONF=/etc/avrdude.conf
 
-### Build:
+### Deploy:
 
 # build program
 cargo build -Z build-std=core --target avr-atmega328p.json --release
