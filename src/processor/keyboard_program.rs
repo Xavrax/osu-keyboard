@@ -1,9 +1,9 @@
 use crate::error_system::OsuKeyboardError;
-use crate::program::Program;
+use crate::processor::Processor;
 
-pub struct TemporaryProgram;
+pub struct TemporaryProcessor;
 
-impl Program for TemporaryProgram {
+impl Processor for TemporaryProcessor {
     fn setup(&self) -> Result<(), OsuKeyboardError> {
         Ok(())
     }
