@@ -1,11 +1,10 @@
 pub enum OsuKeyboardError {
     InitializationFailed,
-    Unknown,
 }
 
 pub fn report(error: OsuKeyboardError) -> ! {
     let error = match error {
-        _ => ||{},
+        _ => || {},
     };
 
     loop {

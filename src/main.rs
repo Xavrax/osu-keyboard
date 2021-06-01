@@ -10,5 +10,8 @@ extern crate panic_halt;
 
 #[arduino_uno::entry]
 fn main() -> ! {
-    program::run().unwrap_or_else(|err| error_system::report(err))
+    let peripherals =
+        arduino_uno::Peripherals::take().expect("Cannot take Peripherals and handle error!");
+
+    program::run(peripherals).unwrap_or_else(|err| error_system::report(err))
 }

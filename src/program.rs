@@ -4,8 +4,9 @@ use crate::processor::Processor;
 use arduino_uno::hal::port::mode::Output;
 use arduino_uno::hal::port::portb::PB5;
 use arduino_uno::prelude::*;
+use arduino_uno::Peripherals;
 
-pub fn run() -> Result<!, OsuKeyboardError> {
+pub fn run(peripherals: Peripherals) -> Result<!, OsuKeyboardError> {
     let processor = TemporaryProcessor;
 
     processor.setup()?;
