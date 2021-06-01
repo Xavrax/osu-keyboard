@@ -1,5 +1,6 @@
 pub enum OsuKeyboardError {
     InitializationFailed,
+    Unknown,
 }
 
 pub fn report(error: OsuKeyboardError) -> ! {
