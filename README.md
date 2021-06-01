@@ -1,3 +1,4 @@
+# :warning: Work in progress! :warning:
 # osu-keyboard
 
 Osu! keyboard project written in rust for my own but feel free to fork or use it.
