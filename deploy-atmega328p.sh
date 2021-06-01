@@ -8,9 +8,6 @@ export AVRDUDE_CONF=/etc/avrdude.conf
 
 ### Deploy:
 
-# build program
-cargo build -Z build-std=core --target avr-atmega328p.json --release
-
 # make .hex file
 avr-objcopy -j .text -j .data -O ihex target/avr-atmega328p/release/osu-keyboard.elf osu-keyboard.hex
 
