@@ -3,11 +3,14 @@ pub enum OsuKeyboardError {
 }
 
 pub fn report(error: OsuKeyboardError) -> ! {
-    match error {
-        _ => (),
-    }
+    let error = match error {
+        _ => ||{},
+    };
 
-    loop {}
+    loop {
+        (error)();
+        arduino_uno::delay_ms(1000_u16)
+    }
 }
 
 // fn stutter_blink(led: &mut PB5<Output>, times: usize) {
