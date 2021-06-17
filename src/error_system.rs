@@ -3,12 +3,12 @@ pub enum OsuKeyboardError {
 }
 
 pub fn report(error: OsuKeyboardError) -> ! {
-    let error = match error {
+    let error_handle = match error {
         _ => || {},
     };
 
     loop {
-        (error)();
+        (error_handle)();
         arduino_uno::delay_ms(1000_u16)
     }
 }

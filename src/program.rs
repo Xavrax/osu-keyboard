@@ -1,5 +1,5 @@
 use crate::error_system::OsuKeyboardError;
-use crate::processor::keyboard_processor::{KeyboardProcessor, TemporaryProcessor};
+use crate::processor::keyboard_processor::KeyboardProcessor;
 use crate::processor::Processor;
 use arduino_uno::hal::port::mode::Output;
 use arduino_uno::hal::port::portb::PB5;
