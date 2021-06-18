@@ -10,7 +10,7 @@ All you need to start play with this project:
 - arduino uno (for development purposes)
 - avr-atmega328p and other electronic stuff (to finish project)
 
-You can get rustup [here](acquire)!
+You can get rustup [here](https://rustup.rs/)!
 
 You have to install nightly version of rust's toolchain:
 ```shell
